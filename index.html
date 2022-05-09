@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+         $(function(){
+    $('.left').on('click',function(){
+        $('.left').fadeOut(1000)
+        $('.right').fadeOut(1000)
+
+    })
+    $('.right').on('click',function(){
+        $('.right').fadeOut(1000)
+        $('.left').fadeOut(1000)
+        
+    })
+    $('#but').css("background-color","brown")
+    
+})
+    </script>
+    
+    <div class="left">
+        <h2> Agency<h2>
+
+    </div>
+    <div class="right">
+        <h2>travel to do</h2>
+    </div>
+    <div class="nav">
+        <ul>
+              <a href="home.html"><li>home</li></a>
+              <a href="#"><li >our team</li></a>
+              <a href="our projects.html"><li >our projects</li></a>
+              <a href="#"><li >contact us</li></a>
+        </ul>
+  </div>
+  <div class="social">
+    <ul>
+         <a href="https://www.facebook.com/traveltodo.tn"> <li><i class="fa fa-facebook"></i></li></a>
+         <a href="https://www.instagram.com/traveltodo/?hl=fr"> <li><i class="fa fa-instagram"></i></li><a>
+          <a href="https://twitter.com/Traveltodo4"><li><i class="fa fa-twitter"></i></li></a>
+    </ul>
+</div>
+  <a href="signpage.html"><button id="but">sign in</button></a>
+
+</body>
+</html>

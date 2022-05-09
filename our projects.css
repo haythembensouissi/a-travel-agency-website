@@ -1,0 +1,23 @@
+body{
+    background: url(ny.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+.img1{
+   margin-left: 50%;
+}
+.img{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    margin-left: 50px;
+}
+.par{
+   font-size: 30px;
+   color: red;
+   margin-left: 20px;
+}
+.imgs{
+    display: inline-flex;
+    
+}

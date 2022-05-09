@@ -5,6 +5,7 @@ var tel=document.getElementById('tel').value
 var email=document.getElementById('email').value
 var password=document.getElementById('password').value
 
+
 function alpha(str){
     for(i=0;i<str.length;i++){
         if(str.charAt(i).toUpperCase()<"A"||str.charAt(i).toUpperCase()>"Z"){
@@ -38,6 +39,9 @@ if(password.indexOf(" ")!=-1){
 if(email.indexOf("@")==-1|| email.indexOf(".")==-1){
     alert('check the email')
 }
+window.localStorage.setItem('email',email)
+window.localStorage.setItem("password",password)
+
 
 
 }

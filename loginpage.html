@@ -8,9 +8,7 @@
     <title>Document</title>
     <script >
         function verif(){
-    var first=document.getElementById('first').value
-var last=document.getElementById('last').value
-var tel=document.getElementById('tel').value
+   
 var email=document.getElementById('email').value
 var password=document.getElementById('password').value
 
@@ -33,27 +31,16 @@ function digits(str){
     }
 
 }
-if(alpha(first)==false||first==""){
-    alert('check the first name')
-}
-if(alpha(last)==false||last==""){
-    alert('check the last name')
-}
-if(tel.length!=8||digits(tel==false)){
-    alert('check the phone number ')
-}
-if(password.indexOf(" ")!=-1||password==""){
+
+if(window.localStorage.getItem('password')!=password){
     alert('check the password')
 }
-if(email.indexOf("@")==-1|| email.indexOf(".")==-1||email==""){
+if(window.localStorage.getItem("email")!=email){
     alert('check the email')
 }
-if(f.D1.selectedIndex()==0){
-    alert('select a gender')
-}
 
-window.localStorage.setItem('email',email)
-window.localStorage.setItem("password",password)
+
+
 }
 
 
@@ -62,16 +49,11 @@ window.localStorage.setItem("password",password)
     </script>
    
     <form method="post" name="f" class="form" action="script.js">
-        <p class="text" >firstname:<input type="text" id="first"></p>
-        <p class="text">lastname: <input type="text" id="last"></p>
-        <p class="text">tel:<input type="text" id="tel"></p>
+        
         <p class="text">email: <input type="text" id="email"></p>
         <p class="text">password: <input type="password" id="password"></p>
-        <p  style="color: rgb(4, 0, 128);font-size: 30px;">gender:<select size="1" name="D1" id="gender">
-           <!-- <option selected>select</option>-->
-            <option>male</option>
-            <option>female</option>
-            </select></p>
+          
+            
         <a href="home.html"><input type="button" value="confirm" class="but" onclick="verif()"></a><input type="reset" value="cancel" class="but">
         
     </form>

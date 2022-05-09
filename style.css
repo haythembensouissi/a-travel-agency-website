@@ -96,7 +96,7 @@ h1 {
     letter-spacing: 12px;
     background: #fff;
 }
-#but{
+.but{
     display: flex;
        align-items: center;
        justify-content: center;

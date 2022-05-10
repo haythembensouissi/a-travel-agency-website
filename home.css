@@ -4,8 +4,11 @@
 }
 .header{
     margin-left: 50%;
-    color: aqua;
+    color: rgb(21, 0, 255);
 }
 body{
-    background-color: fuchsia;
+    background-image:linear-gradient(30deg ,#ede0d4 30%,#e7bc91,#a47148,#6f4518) ;
+}
+p{
+    font-size: 25px;
 }

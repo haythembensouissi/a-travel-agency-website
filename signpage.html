@@ -33,27 +33,30 @@ function digits(str){
     }
 
 }
-if(alpha(first)==false||first==""){
+ if(alpha(first)==false||first==""){
     alert('check the first name')
+    return
 }
-if(alpha(last)==false||last==""){
+else if(alpha(last)==false||last==""){
     alert('check the last name')
+    return
 }
-if(tel.length!=8||digits(tel==false)){
+else if(tel.length!=8||digits(tel==false)){
     alert('check the phone number ')
 }
-if(password.indexOf(" ")!=-1||password==""){
+else if(password.indexOf(" ")!=-1||password==""){
     alert('check the password')
+    return
 }
-if(email.indexOf("@")==-1|| email.indexOf(".")==-1||email==""){
+else if(email.indexOf("@")==-1|| email.indexOf(".")==-1||email==""){
     alert('check the email')
-}
-if(f.D1.selectedIndex()==0){
-    alert('select a gender')
+    return
 }
 
 window.localStorage.setItem('email',email)
 window.localStorage.setItem("password",password)
+window.location="./book.html"
+
 }
 
 
@@ -61,18 +64,41 @@ window.localStorage.setItem("password",password)
 
     </script>
    
-    <form method="post" name="f" class="form" action="script.js">
-        <p class="text" >firstname:<input type="text" id="first"></p>
-        <p class="text">lastname: <input type="text" id="last"></p>
-        <p class="text">tel:<input type="text" id="tel"></p>
-        <p class="text">email: <input type="text" id="email"></p>
-        <p class="text">password: <input type="password" id="password"></p>
-        <p  style="color: rgb(4, 0, 128);font-size: 30px;">gender:<select size="1" name="D1" id="gender">
-           <!-- <option selected>select</option>-->
-            <option>male</option>
-            <option>female</option>
-            </select></p>
-        <a href="home.html"><input type="button" value="confirm" class="but" onclick="verif()"></a><input type="reset" value="cancel" class="but">
+    <form method="post" name="f" class="form" >
+        <table>
+            <tr>
+      <td class="text">firstName:</td> 
+      <td><input type="text" id="first" placeholder="your firstname here..."></td>
+    </tr>
+    <tr>
+        <td class="text">lastName:</td> 
+        <td><input type="text" id="last" placeholder="your lastname here..."></td>
+      </tr>
+      <tr>
+        <td class="text">phone:</td> 
+        <td><input type="text" id="tel" placeholder="your phone number here..."></td>
+      </tr>
+      <tr>
+        <td class="text">email:</td> 
+        <td><input type="text" id="email" placeholder="your email here..."></td>
+      </tr>
+                  <tr>
+      <td class="text">password:</td> 
+      <td><input type="password" id="password" placeholder="your password here"></td>
+    </tr>
+    <tr>
+       <td class="text">gender</td>
+       <td><select size="1" name="D1" id="gender">
+            <!-- <option selected>select</option>-->
+             <option>male</option>
+             <option>female</option>
+             </select></td>
+    </tr>
+      
+      
+     
+        </table>
+     <input type="button" value="confirm" class="but" onclick="verif()"><input type="reset" value="cancel" class="but">
         
     </form>
 </head>

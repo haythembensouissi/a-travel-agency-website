@@ -1,5 +1,6 @@
 body{
-    background: url(ny.jpg) no-repeat 50% 50%;
+    background-image: url(https://i.gifer.com/fyCl.gif);
+    background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }

@@ -7,8 +7,11 @@
     color: rgb(21, 0, 255);
 }
 body{
-    background-image:linear-gradient(30deg ,#ede0d4 30%,#e7bc91,#a47148,#6f4518) ;
+    background-image:url(https://img.freepik.com/photos-gratuite/aile-avion-decor-du-ciel-coucher-soleil_332001-134.jpg?size=626&ext=jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 p{
+    color: rgb(210, 30, 30);
     font-size: 25px;
 }

@@ -35,8 +35,11 @@ function digits(str){
 if(window.localStorage.getItem('password')!=password){
     alert('check the password')
 }
-if(window.localStorage.getItem("email")!=email){
+else if(window.localStorage.getItem("email")!=email){
     alert('check the email')
+}
+else{
+    window.location="./book.html"
 }
 
 
@@ -48,15 +51,27 @@ if(window.localStorage.getItem("email")!=email){
 
     </script>
    
-    <form method="post" name="f" class="form" action="script.js">
-        
-        <p class="text">email: <input type="text" id="email"></p>
-        <p class="text">password: <input type="password" id="password"></p>
+    <form method="post" name="f" class="form" >
+        <table>
+            <tr>
+       <td class="text">email:</td>
+      <td> <input type="text" id="email" placeholder="your email here...">
+    </tr>
+    <tr>
+        <td class="text">password:</td> 
+        <td><input type="password" id="password" placeholder="your password here..."></td>
+        </tr>
+    
+<tr>
+    <td><input type="button" value="confirm" class="but" onclick="verif()"><input type="reset" value="cancel" class="but"></td>
+</tr>
+        </table>
           
             
-        <a href="home.html"><input type="button" value="confirm" class="but" onclick="verif()"></a><input type="reset" value="cancel" class="but">
+       
         
     </form>
+    
 </head>
 <body>
     
